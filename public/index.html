@@ -13,8 +13,22 @@
     <script src="http://localhost:3003/dist/bundle.js"></script>
 
     <script>
+      const getListingId = (path) => {
+        const parts = path.split('/');
+        if (parts[1] === 'listings') {
+          const id = parseInt(parts[2], 10);
+          if (typeof id === 'number' && id >= 0 && id < 200) {
+            return id;
+          }
+        }
+        return null;
+      };
+
+      const listingId = getListingId(window.location.pathname) ||
+                  Math.floor(Math.random() * 200);
+
       ReactDOM.render(
-        React.createElement(SimilarListings, { id: 0 }),
+        React.createElement(SimilarListings, { id: listingId }),
         document.getElementById('similar-listings'),
       );
     </script>

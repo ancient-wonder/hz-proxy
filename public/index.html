@@ -3,14 +3,25 @@
   <head>
     <meta charset="utf-8">
     <title>Seabnb</title>
+    <link href="styles.css" rel="stylesheet">
     <link href="http://localhost:3003/dist/bundle.css" rel="stylesheet">
     <link href="http://localhost:3001/dist/bundle.css" rel="stylesheet">
   </head>
   <body>
-    <div id="amenities"></div>
-    <div id="bookings"></div>
-    <div id="reviews"></div>
-    <div id="similar-listings"></div>
+    <section class="current-listing">
+      <div class="current-listing-centered">
+        <section class="current-listing-info">
+          <div id="amenities"></div>
+          <div id="reviews"></div>
+        </section>
+        <aside class="bookings-column">
+          <div id="bookings"></div>
+        </aside>
+    </div>
+    </section>
+    <section class="additional-content">
+      <div id="similar-listings"></div>
+    </section>
     <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
     <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
 

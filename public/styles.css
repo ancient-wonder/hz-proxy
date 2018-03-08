@@ -1,0 +1,23 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.current-listing {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.current-listing-centered {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 1050px;
+}
+
+.current-listing-info {
+  width: 612px;
+  padding: 0px 8px;
+}

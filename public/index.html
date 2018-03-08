@@ -23,7 +23,7 @@
     <!-- <script src="http://localhost:3004/app.js"></script> -->
 
     <script>
-      const listingId = window.location.pathname.split('/')[2] ||
+      const listingId = parseInt(window.location.pathname.split('/')[2], 10) ||
                         Math.floor(Math.random() * 200);
 
       ReactDOM.render(

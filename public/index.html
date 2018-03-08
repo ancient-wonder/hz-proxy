@@ -8,7 +8,7 @@
   </head>
   <body>
     <div id="amenities"></div>
-    <div id="booking"></div>
+    <div id="bookings"></div>
     <div id="reviews"></div>
     <div id="similar-listings"></div>
     <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
@@ -17,7 +17,7 @@
     <!-- amenities -->
     <script src="http://localhost:3001/dist/bundle.js"></script>
     <!-- booking -->
-    <!-- <script src="http://localhost:3002/app.js"></script> -->
+    <script src="http://localhost:3002/index_bundle.js"></script>
     <!-- similar listings -->
     <script src="http://localhost:3003/dist/bundle.js"></script>
     <!-- reviews -->
@@ -35,6 +35,11 @@
       ReactDOM.render(
         React.createElement(Amenities, { id: listingId }),
         document.getElementById('amenities'),
+      );
+
+      ReactDOM.render(
+        React.createElement(Bookings),
+        document.getElementById('bookings'),
       );
     </script>
   </body>

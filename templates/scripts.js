@@ -7,7 +7,7 @@ module.exports = (items) => `
   <script>
     ${items.map(item => {
       return `ReactDOM.hydrate(
-        React.createElement(${item}),
+        React.createElement(${item}, {itemid: window.location.pathname.split('/')[2]}),
         document.getElementById('${item}')
       );`;
     }).join('\n')}

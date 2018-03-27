@@ -31,11 +31,12 @@ const renderComponents = (components, props = {}) => {
 }
 
 app.get('/listings/:id', (req, res) => {
-  let components = renderComponents(services, {itemid: req.params.id});
+  let id = req.params.id;
+  let components = renderComponents(services, {itemid: id});
   res.end(Layout(
     'Seabnb',
     App(...components),
-    Scripts(Object.keys(services))
+    Scripts(Object.keys(services), id)
   ));
 });
 

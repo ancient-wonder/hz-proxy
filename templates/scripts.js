@@ -7,7 +7,7 @@ module.exports = (items, id) => `
   <script>
     ${items.map(item => {
       return `ReactDOM.hydrate(
-        React.createElement(${item}, {itemid: ${id}}),
+        React.createElement(${item}, {id: ${id}}),
         document.getElementById('${item}')
       );`;
     }).join('\n')}

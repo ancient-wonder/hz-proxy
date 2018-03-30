@@ -1,4 +1,4 @@
-// require('newrelic')
+require('newrelic');
 const express = require('express');
 const morgan = require('morgan');
 const path = require('path');
@@ -25,7 +25,6 @@ const Scripts = require('./templates/scripts');
 const renderComponents = (components, props = {}) => {
   return Object.keys(components).map(item => {
     let component = React.createElement(components[item], props);
-    console.log(props);
     return ReactDom.renderToString(component);
   });
 }

@@ -7,7 +7,6 @@ const app = express();
 const port = 3000;
 
 app.use(morgan('dev'));
-// app.use('/listings/:id', express.static(path.join(__dirname, 'public')));
 app.use(express.static(path.join(__dirname, 'public')));
 
 const clientBundles = './public/services';

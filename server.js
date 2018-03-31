@@ -18,6 +18,7 @@ const React = require('react');
 const ReactDom = require('react-dom/server');
 const Layout = require('./templates/layout');
 const App = require('./templates/app');
+const Styles = require('./templates/styles')
 const Scripts = require('./templates/scripts');
 
 // see: https://medium.com/styled-components/the-simple-guide-to-server-side-rendering-react-with-styled-components-d31c6b2b8fbf
@@ -33,6 +34,7 @@ app.get('/listings/:id', (req, res) => {
   let components = renderComponents(services, {itemid: id});
   res.end(Layout(
     'Seabnb',
+    Styles,
     App(...components),
     Scripts(Object.keys(services), id)
   ));

@@ -11,6 +11,6 @@ module.exports = (amenities, bookings, similarListings, reviews) => `
     </div>
   </section>
   <section class="additional-content">
-    <div id="Similarlistings">${similarListings}</div>
+    <div id="SimilarListings">${similarListings}</div>
   </section>
 `;

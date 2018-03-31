@@ -1,3 +1,4 @@
+module.exports = () => `
 body {
   display: flex;
   flex-direction: column;
@@ -32,4 +33,4 @@ body {
   position: -webkit-sticky;
   position: sticky;
   top: 5px;
-}
+}`;

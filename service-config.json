@@ -1,6 +1,5 @@
 {
   "Amenities": "http://52.53.240.146:3001/app",
   "Bookings": "http://13.57.70.186:3002/app",
-  "SimilarListings": "http://34.218.147.179:3003/app",
-  "Reviews": "http://18.144.49.228:3004/app"
+  "SimilarListings": "http://34.218.147.179:3003/app"
 }

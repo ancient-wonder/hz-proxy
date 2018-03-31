@@ -2,8 +2,8 @@ module.exports = (amenities, bookings, similarListings, reviews) => `
   <section class="current-listing">
     <div class="current-listing-centered">
       <section class="current-listing-info">
-        <div id="amenities">${amenities}</div>
-        <div id="reviews">${reviews}</div>
+        <div id="Amenities">${amenities}</div>
+        <div id="Reviews">${reviews}</div>
       </section>
       <aside class="bookings-column">
         <div id="Bookings">${bookings}</div>
@@ -11,6 +11,6 @@ module.exports = (amenities, bookings, similarListings, reviews) => `
     </div>
   </section>
   <section class="additional-content">
-    <div id="similar-listings">${similarListings}</div>
+    <div id="Similarlistings">${similarListings}</div>
   </section>
 `;
